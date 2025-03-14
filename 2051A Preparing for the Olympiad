@@ -1,0 +1,37 @@
+// 2051A. Preparing for the Olympiad
+#include <bits/stdc++.h>
+#define endl '\n'
+#define optimize() ios_base::sync_with_stdio(0); cin.tie(0); cout.tie(0);
+using namespace std;
+int main()
+{
+    optimize();
+    int t;
+    cin >> t;
+
+    while (t--)
+    {
+        int n;
+        cin >> n;
+        int a[n], b[n];
+
+        for (int i = 0; i < n; i++)
+        {
+            cin >> a[i];
+        }
+
+        for (int i = 0; i < n; i++)
+        {
+            cin >> b[i];
+        }
+
+        int ans = a[n - 1];
+
+        for (int i = 0; i < n - 1; i++)
+        {
+            ans += max(a[i] - b[i + 1], 0);
+        }
+
+        cout << ans << endl;
+    }
+}
