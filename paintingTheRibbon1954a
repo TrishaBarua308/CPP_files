@@ -1,0 +1,28 @@
+#include<bits/stdc++.h>
+#define optimize() ios_base :: sync_with_stdio(0); cin.tie(0); cout.tie(0);
+#define ll long long 
+#define yes cout<<"YES"<<endl
+#define no cout<<"NO"<<endl
+#define endl '\n'
+using namespace std;
+int main()
+{
+    optimize();
+    int t; cin>>t;
+    
+    while(t--)
+    {
+        int n,m,k;  cin>>n>>m>>k;
+
+        int v = n/m;
+
+        if(n%m)  v +=1;
+
+        n-=v; // no. of no need to color
+
+        if(n>k) yes;
+        else no;
+    }
+
+    return 0;
+}
