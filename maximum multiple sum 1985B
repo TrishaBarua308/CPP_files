@@ -1,0 +1,19 @@
+//maximum multiple sum 1985B
+#include<bits/stdc++.h>
+#define ll long long
+#define optimize() ios_base :: sync_with_stdio(0); cin.tie(0); cout.tie(0);
+#define endl '\n'
+using namespace std;
+int main()
+{
+    optimize();
+    int t;  cin>>t;
+
+    while(t--)
+    {
+        int n; cin>>n;
+
+        cout<<((n==3)?3:2)<<endl;
+    }
+    return 0;
+}
