@@ -1,0 +1,15 @@
+class Solution {
+public:
+    int removeDuplicates(vector<int>& nums) {
+        nums.erase(unique(nums.begin(),nums.end()), nums.end());
+        int k = nums.size();
+         
+        for(int i=k; i<nums.size(); i++)
+        {
+            nums[i]= '_';
+        }
+
+        for(auto u : nums) cout<<u;
+        return k;
+    }
+};
