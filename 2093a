@@ -1,0 +1,22 @@
+//https://codeforces.com/contest/2093/problem/A
+#include<bits/stdc++.h>
+#define optimize() ios_base :: sync_with_stdio(0);cin.tie(0);cout.tie(0);
+#define endl '\n'
+using namespace std;
+int main()
+{
+    optimize();
+    int t;   cin>>t;
+
+    while(t--)
+    {
+        int k;  cin>>k;
+        
+        if(k>0 && k%2==1)
+        {
+            cout<<"YES"<<endl;
+        }
+        else
+        cout<<"NO"<<endl;
+    }
+}
