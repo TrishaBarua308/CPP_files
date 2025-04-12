@@ -1,0 +1,45 @@
+#include<bits/stdc++.h>
+#define optimize() ios_base :: sync_with_stdio(0);cin.tie(0);cout.tie(0);
+#define endl '\n'
+#define ll long long
+using namespace std;
+int main()
+{
+    optimize();
+    ll t;  cin>>t;
+
+    while(t--)
+    {
+        ll n;  cin>>n;
+        vector<ll> v(n);
+        for(ll i=0; i<n; i++) cin>>v[i];
+        
+        vector<ll> res(n);
+        
+        partial_sum(v.begin(), v.end(), res.begin());
+
+        ll multi=1;
+
+        for(ll i=0; i<res.size(); i++)
+        {
+            multi *= res[i];
+        }
+        
+        cout<<multi<<" ";
+
+        auto min_it = min_element(v.begin(),v.end());
+        auto max_it = max_element(v.begin(),v.end());
+        ll min = *min_it;
+        ll max = *max_it;
+
+        if( (multi % min ==0 ) && (multi % max==0) )
+        {
+            cout<<"YES"<<endl;
+        }
+        else 
+        {
+            cout<<"NO"<<endl;
+        }
+    }
+return 0;
+}
