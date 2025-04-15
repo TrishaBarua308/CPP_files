@@ -1,0 +1,10 @@
+class Solution {
+public:
+    int hammingWeight(int n) {
+
+        int bitC = log2(n)+1; // count how many bit required
+        bitset <2147483647> = binary(n); // convert to binary
+        int ans = bitset.count(); // count 1 from binary
+        return ans;
+    }
+};
