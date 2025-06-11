@@ -1,0 +1,39 @@
+//Expensive Number
+#include<bits/stdc++.h>
+#define optimize() ios_base :: sync_with_stdio(0);cin.tie(0);  cout.tie(0);
+#define ll long long
+#define endl '\n'
+using namespace std;
+int main()
+{
+    optimize();
+    int t;  cin>>t;
+    while(t--)
+    {
+        string s;  cin>>s;
+        int n = s.length(),  index=-1, count=0;
+        
+
+        for(int i=n-1; i>=0; i--)
+        {
+            int num = s[i]-'0';
+            if(num >= 1) 
+            {
+                index = i;
+                break;
+            }
+            else count++;
+        }
+
+        for(int i=0; i<index; i++)
+        {
+            if(s[i] != '0')
+            {
+                count++;
+            }
+        }
+
+        cout<<count<<endl;
+        
+    }
+}
