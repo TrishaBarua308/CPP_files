@@ -1,0 +1,33 @@
+//https://codeforces.com/problemset/problem/1560/A
+
+#include<bits/stdc++.h>
+#define optimize() ios::sync_with_stdio(0); cin.tie(0); cout.tie(0);
+#define endl "\n"
+#define ll long long
+using namespace std;
+int main()
+{
+    ll t; cin>>t;
+
+    vector<ll> v(t);
+    vector<ll> ans;
+
+    for(ll i=0; i<t; i++) cin>>v[i];
+    ll mx = *max_element(v.begin(), v.end() );
+
+    for(ll i=1; ans.size()< mx; i++)
+    {
+        if(i%3==0 || i%10==3) continue;
+        ans.push_back(i);
+    }
+
+    for(ll i=0; i<t; i++)
+    {
+        cout<<ans[v[i]-1]<<endl;
+    }
+
+
+
+
+
+}
