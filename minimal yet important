@@ -1,0 +1,15 @@
+//minimal yet important
+#include <bits/stdc++.h>
+#define ll long long
+using namespace std;
+     
+int main() {
+    /**
+    * Write your C++ code from here
+    */
+    ll a,b,c;  cin>>a>>b>>c;
+    cout<<min(a,min(b,c))<<endl;
+    
+
+    return 0;
+}
