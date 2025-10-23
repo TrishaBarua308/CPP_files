@@ -1,0 +1,60 @@
+#include<iostream>
+#include<algorithm>
+using namespace std;
+int main()
+{
+    int a,b,c;  cin>>a>>b>>c;
+    int big,small=c, mid=c;
+    
+    
+    if(a>b && a>c) // a  big
+    {
+        big = a;
+        if(b>c)
+        {
+            mid = b;
+            small=c;
+        }
+        else
+        {
+            mid = c;
+            small=b;
+        }
+    }
+    else if(b>a && b>c)
+    {
+        big = b;
+        if(a>c)
+        {
+            mid = a; 
+            small=c;
+        }
+        else
+        {
+            mid = c;
+            small = a;
+        }
+    }
+    else
+    {
+        big = c;
+        if(a>b)
+        {
+            mid = a;
+            small = b;
+        }
+        else
+        {
+            mid =b;
+            small=a;
+        }
+    }
+    
+    
+    cout<<small<<" "<<mid<<" "<<big<<endl;
+}
+
+
+
+
+ 
