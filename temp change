@@ -1,0 +1,13 @@
+#include <bits/stdc++.h>
+using namespace std;
+     
+int main() {
+    /**
+    * Write your C++ code from here
+    */
+    float c;  cin>>c;
+    cout<<fixed<<setprecision(2);
+    cout<<"The temperature in Fahrenheit is: "<<((1.8)*c)+32<<endl;
+
+    return 0;
+}
