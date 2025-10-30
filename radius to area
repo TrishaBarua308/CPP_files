@@ -1,0 +1,14 @@
+#include <bits/stdc++.h>
+using namespace std;
+     
+int main() {
+    /**
+    * Write your C++ code from here
+    */
+    double n;  cin>>n;
+    double res = 3.14*n*n;
+    cout<<fixed<<setprecision(2);
+    cout<<"The area of the circle is "<<res<<" square units."<<endl;
+
+    return 0;
+}
