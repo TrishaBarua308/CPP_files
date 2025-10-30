@@ -1,0 +1,15 @@
+#include <bits/stdc++.h>
+#define ll long long
+using namespace std;
+     
+int main() 
+{
+    /**
+    * Write your C++ code from here
+    */
+    ll a, b;   cin>>a>>b;
+    cout<<"Before swapping: num1 = "<<a<<", num2 = "<<b<<endl;
+    cout<<"After swapping: num1 = "<<b<<", num2 = "<<a<<endl;
+
+    return 0;
+}
