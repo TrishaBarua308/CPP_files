@@ -1,0 +1,18 @@
+#include <bits/stdc++.h>
+#define optimize() ios_base::sync_with_stdio(0); cin.tie(0); cout.tie(0);
+#define ll long long
+#define endl '\n'
+using namespace std;
+     
+int main() 
+{
+    /**
+    * Write your C++ code from here
+    */
+    optimize();
+    ll n; cin>>n;
+    if(n%400==0 || (n%4==0 && n%100!=0)) cout<<n<<" is a leap year."<<endl;
+    else cout<<n<<" is not a leap year."<<endl;
+
+    return 0;
+}
