@@ -1,0 +1,26 @@
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+#include <bits/stdc++.h>
+#define optimize() ios_base::sync_with_stdio(0); cin.tie(0); cout.tie(0);
+#define endl '\n'
+using namespace std;
+
+
+int main() {
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */   
+    optimize();
+    string a,b;  cin>>a>>b;
+    cout<<a.length()<<" "<<b.length()<<endl;
+    cout<<a+b<<endl;
+    char temp = a[0];
+    a[0] = b[0];
+    b[0] = temp;
+    
+    cout<<a<<" "<<b<<endl;
+    
+    
+    return 0;
+}
