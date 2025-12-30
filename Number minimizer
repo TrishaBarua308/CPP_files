@@ -1,0 +1,21 @@
+#include <bits/stdc++.h>
+using namespace std;
+     
+int main() {
+    /**
+    * Write your C++ code from here
+    */
+    string s;  cin>>s;
+    int k;     cin>>k;
+    
+    s[0]='1' ;
+    for(int i=1; i<=k; i++)
+    {
+        s[i] = '0';
+    }
+
+    cout<<"Min = "<<s<<endl;
+
+
+    return 0;
+}
