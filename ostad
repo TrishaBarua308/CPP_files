@@ -1,0 +1,14 @@
+#include <bits/stdc++.h>
+using namespace std;
+     
+int main() {
+    /**
+    * Write your C++ code from here
+    */
+    int fage, sage; cin>>fage>>sage;
+
+    cout<<fage-(2*sage) <<endl;
+
+
+    return 0;
+}
