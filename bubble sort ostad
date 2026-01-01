@@ -1,0 +1,31 @@
+#include <bits/stdc++.h>
+using namespace std;
+     
+int main() {
+    /**
+    * Write your C++ code from here
+    */
+    int n;  cin>>n;
+    int a[n];
+
+    for(int i=0; i<n; i++)  cin>>a[i];
+
+    for(int pass=0; pass<n-1; pass++)
+    {
+        for(int i=0; i<n-1; i++)
+        {
+            if(a[i] >= a[i+1])
+            {
+                int temp = a[i];
+                a[i] = a[i+1];
+                a[i+1]= temp;
+            }
+        }
+    }
+
+
+    for(int i=0; i<n; i++) cout<<a[i]<<" ";
+    cout<<endl;
+
+    return 0;
+}
