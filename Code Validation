@@ -1,0 +1,27 @@
+#include <bits/stdc++.h>
+using namespace std;
+     
+int main() {
+    string s;   cin>>s;
+    int flag=0;
+    string demo="#0123456789ABCDEF";
+
+    if(s.length()!=7 || s[0]!='#')
+    {
+        cout<<"false"<<endl;
+        return 0;
+    }
+
+    for(int i=1; i<7; i++)
+    {
+        if( !isdigit(s[i]) && !(s[i]>='A' && s[i]<='F') && !(s[i]>='a' && s[i]<='f'))
+        {
+            cout<<"false"<<endl;
+            return 0;
+        }
+    }
+
+    cout<<"true"<<endl;
+
+
+}
