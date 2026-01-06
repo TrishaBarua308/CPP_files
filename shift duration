@@ -1,0 +1,15 @@
+#include <bits/stdc++.h>
+using namespace std;
+     
+int main()
+{
+    int s,e;  cin>>s>>e;
+    
+    int maximum = max(s,e); 
+    int minimum = min(s,e);
+
+    if(e>s)  cout<<e-s<<endl;
+    else     cout<<e+24-s<<endl;
+
+    return 0;
+}
