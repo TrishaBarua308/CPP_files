@@ -1,0 +1,16 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int fact(int n)
+{
+    if(n<=1) return 1;
+    else return n*fact(n-1);
+}
+     
+int main() 
+{
+    int n,r;  cin>>n>>r;
+    cout<<(float)fact(n)/fact(n-r)<<endl;
+
+    return 0;
+}
