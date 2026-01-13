@@ -1,0 +1,15 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+    double m, v;
+    cin >> m >> v;
+
+    double ke = 0.5 * m * v * v;   
+    long long result = llround(ke); 
+
+    cout << result << endl;
+
+    return 0;
+}
