@@ -1,0 +1,15 @@
+#include <bits/stdc++.h>
+using namespace std;
+     
+int main() 
+{
+
+    int w,b,f;  cin>>w>>b>>f;
+
+    // int ww = w/4;
+    // int ff = f/2;
+
+    cout<<min( (w/4) , min(b, (f/2)) )<<endl;
+
+    return 0;
+}
