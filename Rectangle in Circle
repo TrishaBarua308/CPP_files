@@ -1,0 +1,17 @@
+#include <bits/stdc++.h>
+using namespace std;
+     
+int main() {
+    /**
+    * Write your C++ code from here
+    */
+
+    double w,h,r;   cin>>w>>h>>r;
+
+    double d = sqrt(w*w + h*h);
+
+    if(d<=2*r)  cout<<"true"<<endl;
+    else cout<<"false"<<endl;
+
+    return 0;
+}
