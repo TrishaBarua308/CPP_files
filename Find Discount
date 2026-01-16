@@ -1,0 +1,12 @@
+#include <bits/stdc++.h>
+using namespace std;
+     
+int main() 
+{
+    float f,d;   cin>>f>>d;
+    float percen = f*(d/100) ;
+    cout<<fixed<<setprecision(2);
+    cout<<"Price: "<<f-percen<<endl;
+
+    return 0;
+}
