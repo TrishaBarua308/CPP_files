@@ -1,0 +1,18 @@
+#include <bits/stdc++.h>
+using namespace std;
+#define ll long long
+     
+int main() {
+    /**
+    * Write your C++ code from here
+    */
+
+    ll n;  cin>>n;
+    ll root = sqrt(n);
+    
+    if(n==(root*root))  cout<<"YES"<<endl;
+    else cout<<"NO"<<endl;
+
+
+    return 0;
+}
