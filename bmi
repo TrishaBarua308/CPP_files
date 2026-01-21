@@ -1,0 +1,20 @@
+#include <bits/stdc++.h>
+using namespace std;
+     
+int main() {
+    /**
+    * Write your C++ code from here
+    */
+    double h,w;  cin>>h>>w;
+    double bmi = w/(h*h);
+    //cout<<bmi;
+    cout<<fixed<<setprecision(2);
+    cout<<"BMI: "<<bmi<<endl;
+
+    if(bmi<18.5)        cout<<"Underweight"<<endl;
+    else if((bmi>=18.5) && (bmi<25))  cout<<"Normal weight"<<endl;
+    else if((bmi>=25) && (bmi<30))    cout<<"Overweight"<<endl;
+    else cout<<"Obese"<<endl;
+
+    return 0;
+}
