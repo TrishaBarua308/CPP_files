@@ -1,0 +1,22 @@
+#include<bits/stdc++.h>
+#define optimize() ios::sync_with_stdio(0); cin.tie(0);
+#define endl "\n"
+using namespace std;
+int main()
+{
+    optimize();
+    int t;  cin>>t;
+    while(t--)
+    {
+        int n, ans=0;  cin>>n;
+        
+        while(n>=10)
+        {
+            n/=10;
+            ans+=9;
+        }
+        cout<<ans+n<<endl;
+    }
+
+    return 0;
+}
