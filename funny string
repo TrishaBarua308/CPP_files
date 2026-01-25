@@ -1,0 +1,31 @@
+#include <bits/stdc++.h>
+using namespace std;
+     
+int main() {
+    /**
+    * Write your C++ code from here
+    */
+    string s;   cin>>s;
+    bool flag;
+
+    for(int i=0; i<s.length(); i++)
+    {
+        if((i%2==1) && (s[i]>='a' && s[i]<='z'))
+        {
+            flag=true;
+            break;
+        }
+
+
+        else  if((i%2==0) && (s[i]>='A' && s[i]<='Z'))
+        {
+            flag=true;
+            break;
+        }
+    }
+
+    if(flag) cout<<"No"<<endl;
+    else cout<<"Yes"<<endl;
+
+    return 0;
+}
