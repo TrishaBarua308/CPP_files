@@ -1,0 +1,25 @@
+#include <bits/stdc++.h>
+using namespace std;
+     
+int main() 
+{
+    string s;  cin>>s;
+    
+    if(s.find('.')!= string::npos)
+    {
+        while(!s.empty() && s.back()=='0')
+        {
+            s.pop_back();
+        }
+    }
+
+    if(!s.empty() && s.back()=='.')
+    {
+        s.pop_back();
+    }
+
+
+    cout<<s<<endl;
+
+    return 0;
+}
