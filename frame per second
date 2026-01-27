@@ -1,0 +1,12 @@
+#include <bits/stdc++.h>
+using namespace std;
+     
+int main() 
+{
+
+    int min, fps;   cin>>min>>fps;
+
+    cout<<min*60*fps<<endl;    
+
+    return 0;
+}
