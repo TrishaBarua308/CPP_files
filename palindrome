@@ -1,0 +1,21 @@
+#include <bits/stdc++.h>
+using namespace std;
+     
+int main() 
+{
+    int n;  cin>>n;
+    int sum=0;
+    int temp = n;
+
+    while(temp!=0)
+    {
+        int rem = temp%10;
+        sum = sum*10 + rem;
+        temp /= 10;
+    }
+
+    if(n==sum)    cout<<n<<" is a palindrome number"<<endl;
+    else          cout<<n<<" is not a palindrome number"<<endl;
+
+    return 0;
+}
