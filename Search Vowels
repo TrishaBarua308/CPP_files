@@ -1,0 +1,26 @@
+#include <bits/stdc++.h>
+using namespace std;
+     
+int main() {
+    /**
+    * Write your C++ code from here
+    */
+    string s;  cin>>s ;
+    int flag=0;
+    // string vowel = "aeiou" ;
+    for(int i=0; i<s.length(); i++)
+    {
+        s[i] = tolower(s[i]);
+    }
+
+    for(int i=0; i<s.length(); i++)
+    {
+        if(s[i]=='a' || s[i]=='e' || s[i]=='i' || s[i]=='o' || s[i]=='u' )  flag=1;
+    }
+
+    if(flag==1) cout<<"The string contains a vowel."<<endl;
+    else cout<<"The string does not contain any vowel."<<endl;
+
+
+    return 0;
+}
