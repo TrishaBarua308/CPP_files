@@ -1,0 +1,30 @@
+#include <bits/stdc++.h>
+#define ll long long
+using namespace std;
+     
+int main() 
+{
+    ll n;  cin>>n;
+    vector<ll> a(n), b(n);
+
+    for(int i=0; i<n; i++)   cin>>a[i]>>b[i];
+    
+    ll ans = 0;
+
+    for(int i=0; i<n; i++)
+    {
+        for(int j=i+1; j<n; j++)
+        {
+            ll pp = a[i] - a[j];
+            ll ff = b[i] - b[j];
+            ll dist = pp*pp + ff*ff;
+            ans = max(ans,dist);
+        }
+    }
+
+
+    cout<<ans<<endl;
+   
+
+    return 0;
+}
