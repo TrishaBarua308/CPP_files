@@ -1,0 +1,18 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    string s,t;  cin>>s>>t;
+    
+    int c = abs(s[0]-s[1]);
+    int dist1 = min(c, 5-c);
+    
+    int d = abs(t[0]-t[1]);
+    int dist2 = min(d, 5-d);
+    
+    if(dist1 == dist2) cout<<"Yes\n";
+    else     cout<<"No\n";
+    
+    
+    return 0;
+}
