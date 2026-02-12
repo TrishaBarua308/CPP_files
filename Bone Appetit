@@ -1,0 +1,15 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+	// your code goes here
+	
+	int n,m,x,y;  cin>>n>>m>>x>>y;
+	
+	int c = (n*x) + (m*y) ;
+	
+	cout<<c<<endl;
+	
+	return 0;
+
+}
