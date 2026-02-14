@@ -1,0 +1,18 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int t;  cin>>t;
+	
+	while(t--)
+	{
+	    int x,y,z;  cin>>x>>y>>z;
+	    int total = x*y; // 20
+	    
+	    
+	    cout<<(( 2*z>total )?"YES\n":"NO\n")<<endl;
+	}
+	
+	return 0;
+}
