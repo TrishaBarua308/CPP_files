@@ -1,0 +1,33 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+
+int main() {
+	// your code goes here
+	int t;  cin>>t;
+	
+	while(t--)
+	{
+	    int a[3], b[3];
+	    cin>>a[0]>>a[1]>>a[2]>>b[0]>>b[1]>>b[2];
+	    
+	    sort(a,a+3, greater<int>());
+	    sort(b,b+3, greater<int>());
+	    
+	    string ans;
+	    
+	   
+	    int aa = a[0]*100 + a[1]*10 + a[2] ;
+	    int bb = b[0]*100 + b[1]*10 + b[2] ;
+
+      // loop , n=a[i]*s
+	    
+	    
+	    if(aa>bb) cout<<"Alice\n";
+	    else  if(aa<bb) cout<<"BOB\n";
+	    else cout<<"TIE\n";
+	    
+	}
+	
+	return 0;
+}
