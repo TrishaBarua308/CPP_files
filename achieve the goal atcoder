@@ -1,0 +1,22 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int n,k,m;     cin>>n>>k>>m;
+    int d = n-1;
+    int a[d];  
+    for(int i=0; i<d; i++)  cin>>a[i];
+    
+    int sum = accumulate(a, a+d, 0);
+    
+    int remain = m*n - sum;
+    
+    if(remain>k)  cout<<"-1\n";
+    else
+    {
+        if(remain<0) cout<<"0\n";
+        else      cout<<remain<<endl;
+    }
+
+    return 0;
+}
