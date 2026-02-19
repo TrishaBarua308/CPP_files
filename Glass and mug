@@ -1,0 +1,35 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int k, old_g, old_m;   cin>>k>>old_g>>old_m;
+    int g,m;
+    
+    g = 0, m=0;
+    
+    for(int i=0; i<k; i++)
+    {
+        
+        if(g==old_g)  g=0;
+        else if(m==0)  m = old_m ;
+        else
+        {
+            int space = old_g - g;
+            
+            if(m>=space)
+            {
+                 g = old_g ;
+                 m -= space ;
+            }
+            else 
+            {
+                g += m;
+                m =0;
+            }
+        }
+    }
+    
+    cout<<g<<" "<<m<<endl;
+
+    return 0;
+}
