@@ -1,0 +1,24 @@
+// The code below is incorrect. Debug the code to solve this problem
+#include <bits/stdc++.h>
+
+using namespace std;
+int main()
+{
+    int t;
+    cin >> t;
+    while (t--)
+    {
+        int X, Y;
+        //Accept 2 integers inputs.
+        cin >> X >> Y;
+        if (X == Y && X>0)
+        {
+            cout << "Yes" << endl;
+        }
+        else
+        {
+            cout << "No" << endl;
+        }
+    }
+    return 0;
+}
