@@ -1,0 +1,51 @@
+// 1352B
+#include <bits/stdc++.h>
+#define optimize()                \
+    ios_base::sync_with_stdio(0); \
+    cin.tie(0);                   \
+    cout.tie(0);
+using namespace std;
+int main()
+{
+
+    optimize();
+
+    int t;
+    cin >> t;
+    while (t--)
+    {
+        int n, k;
+        cin >> n >> k;
+        
+        int x = n-(k-1);
+        int y = n-2*(k-1);
+
+        if(x%2!= 0  && x>=1)
+        {
+            cout<<"YES\n";
+            for(int i=0; i<k-1; i++)
+            {
+                cout<<"1 ";
+            }
+            cout<<x<<endl;
+        }
+
+        else if(y%2==0 && y>=2)
+        {
+            cout<<"YES\n";
+            for(int i=0; i<k-1; i++)
+            {
+                cout<<"2 ";
+            }
+            cout<<y<<endl;
+        }
+        else
+        {
+            cout<<"NO\n";
+        }
+
+       
+    }
+
+    return 0;
+}
