@@ -1,0 +1,16 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int t;   cin>>t;
+	
+	while(t--)
+	{
+	    int n;   cin>>n;
+	    string a[] = {"NORMAL","HUGE","SMALL"};
+	    if(n<3) cout<<a[n]<<endl;
+	    else cout<<a[n%3]<<endl;
+	}
+
+}
