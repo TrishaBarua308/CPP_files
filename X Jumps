@@ -1,0 +1,16 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() 
+{
+	// your code goes here
+	int t;   cin>>t;
+	while(t--)
+	{
+	    int x,y;   cin>>x>>y;
+	    int d = x/y;
+	    if(x%y==0) cout<<d<<endl;
+	    else cout<<d + (x-(y*d))<<endl;
+	}
+
+}
