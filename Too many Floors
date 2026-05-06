@@ -1,0 +1,16 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int t;   cin>>t;
+	while(t--)
+	{
+	    float x,y;   cin>>x>>y;
+	    int f = ceil(x/10);
+	    int t = ceil(y/10);
+	    
+	    cout<<abs(f-t)<<endl;
+	}
+
+}
