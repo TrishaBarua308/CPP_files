@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+
+int main() 
+{
+	// your code goes here
+	int t;   cin>>t;
+	while(t--)
+	{
+	    float a,x,b,y;   cin>>a>>x>>b>>y;
+	    
+	    float s = a/x;
+	    float f = b/y;
+	    
+	    if( s < f ) cout<<"Bob\n";
+	    else if( s>f)  cout<<"Alice\n";
+	    else cout<<"Equal\n";
+	}
+	
+	return 0;
+
+}
