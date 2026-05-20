@@ -1,0 +1,19 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() 
+{
+	// your code goes here
+	int t;  cin>>t;
+	while(t--)
+	{
+	    float x,y,r;   cin>>x>>y>>r;
+	    float d = r/30;
+	    float dr = d + x;
+	    float ans = ceil(dr/y);
+	    cout<<ans<<endl;
+	}
+	
+	
+
+}
