@@ -1,27 +1,25 @@
-#include<bits/stdc++.h>
-#define optimize() ios_base :: sync_with_stdio(0);cin.tie(0);cout.tie(0);
-#define endl '\n'
+// https://atcoder.jp/contests/abc296/tasks/abc296_a
+#include <bits/stdc++.h>
+#define optimize() ios_base::sync_with_stdio(0); cin.tie(0); cout.tie(0);
 using namespace std;
 int main()
 {
     optimize();
-    
-    int inp;  cin>>inp;
-    vector<int> v;
-    
-    int count=0;
-    
-    for(int i=1; i*i<=inp; i++)
+    int n;  cin>>n;
+
+    string s;   cin>>s;
+    bool ans = true; 
+
+    for(int i=0; i<n; i++)
     {
-        count++;
-        v.push_back(i*i);   
+        if(s[0]=='F' || s[i]==s[i+1] )
+        {
+            ans = false;
+            break;
+        }
     }
-    
-    cout<<count<<endl;
-    for(int i=0; i<v.size(); i++)  cout<<v[i]<<" ";
+
+    if(ans) cout<<"YES\n";
+    else    cout<<"NO\n";
+
 }
-
-
-
-
-
