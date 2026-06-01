@@ -1,0 +1,26 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() 
+{
+	// your code goes here
+	
+	int t;   cin>>t;
+	while(t--)
+	{
+	    int a[3], b[3];  cin>>a[0]>>a[1]>>a[2]>>b[0]>>b[1]>>b[2];
+	    
+	    int pp = *min_element(a,a+3);
+	    int bb = *min_element(b,b+3);
+	    
+	    int ff = accumulate(a,a+3, 0) - pp ;
+	    int tt = accumulate(b,b+3, 0) - bb ;
+	    
+	    if(ff>tt)       cout<<"Alice\n";
+	    else if(ff<tt)  cout<<"Bob\n";
+	    else            cout<<"Tie\n";
+	} 
+	
+	return 0;
+
+}
