@@ -6,6 +6,8 @@ using namespace std;
 
 int main()
 {
+    optimize();
+    
     int t;      cin>>t;
 
     while(t--)
