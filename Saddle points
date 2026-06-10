@@ -1,0 +1,55 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() 
+{
+    ios_base::sync_with_stdio(0);
+    cin.tie(0);
+    cout.tie(0);
+
+    // example below, replace it with your solution
+    int r,c;  cin>>r>>c;
+    int a[r][c];
+
+    for(int i=0; i<r; i++)
+    {
+        for(int j=0; j<c; j++)
+        {
+            cin>>a[i][j];
+        }
+    }
+
+    int min_row[r],  max_col[c], count=0;
+    for(int i=0; i<r; i++)  min_row[i] = 99999;
+    for(int j=0; j<c; j++)  max_col[j] = -99999;
+
+    for(int i=0; i<r; i++)
+    {
+        for(int j=0; j<c; j++)
+        {
+            if( a[i][j] < min_row[i] )
+            {
+                min_row[i] = a[i][j];
+            }
+
+            if( a[i][j] > max_col[j] )
+            {
+                max_col[j] = a[i][j];
+            }
+        }
+    }
+
+
+    for(int i=0; i<r; i++)
+    {
+        for(int j=0; j<c; j++)
+        {
+            if( (a[i][j] == min_row[i] ) &&  (a[i][j] == max_col[j]) )
+            count++;
+        }
+    }
+
+    cout<<count<<endl;
+
+
+}
