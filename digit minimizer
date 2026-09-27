@@ -1,0 +1,26 @@
+#include <bits/stdc++.h>
+using namespace std;
+     
+int main() {
+   string s;  int k;  cin>>s>>k;
+   int n = s.length();
+
+   if(s[0]!='1' & k>0)
+   {
+    s[0]='1';
+    k--;
+   }
+   for(int i=1; i<n && k>0; i++)
+   {
+    if(s[i]!='0')
+    {
+        s[i]='0';
+        k--;
+    }
+   }
+
+   cout<<"Min = ";
+   cout<<s<<endl;
+
+    return 0;
+}
