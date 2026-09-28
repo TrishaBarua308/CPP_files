@@ -1,0 +1,27 @@
+#include <bits/stdc++.h>
+using namespace std;
+int call(string s)
+{
+    if(s.length()!=7) return 0;
+    if(s[0]!='#') return 0;
+    for(int i=1; i<s.length(); i++)
+    {
+        if( !((s[i]>='0' && s[i]<='9') || (s[i]>='A' && s[i]<='F') || (s[i]>='a' && s[i]<='f')))
+        {
+            return 0;
+        }
+    }
+    return 1;
+}
+     
+int main() {
+    /**
+    * Write your C++ code from here
+    */
+    string s; cin>>s;
+    int f = call(s);
+    if(f) cout<<"true\n";
+    else cout<<"false\n";
+
+    return 0;
+}
