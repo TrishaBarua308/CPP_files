@@ -1,0 +1,15 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+    double C, F;
+    cin >> C;
+
+    F = (C * 9.0 / 5.0) + 32;
+
+    cout << fixed << setprecision(2);
+    cout << "The temperature in Fahrenheit is: " << F << endl;
+
+    return 0;
+}
