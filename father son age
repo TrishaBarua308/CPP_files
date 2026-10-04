@@ -1,0 +1,13 @@
+#include <bits/stdc++.h>
+using namespace std;
+     
+int main() {
+    /**
+    * Write your C++ code from here
+    */
+    int f,s;  cin>>f>>s;
+
+    cout<<abs(f-s-s)<<endl;
+
+    return 0;
+}
