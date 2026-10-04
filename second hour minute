@@ -1,0 +1,14 @@
+#include <bits/stdc++.h>
+using namespace std;
+     
+int main() {
+    /**
+    * Write your C++ code from here
+    */
+    int s;  cin>>s;
+    int h = s/3600;
+    int m = s%3600;
+    cout<<h<<":"<<m/60;
+
+    return 0;
+}
