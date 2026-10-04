@@ -1,0 +1,26 @@
+#include <iostream>
+#include <algorithm>
+
+using namespace std;
+
+int main() {
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
+
+    int A, B;
+    if (!(cin >> A >> B)) return 0;
+
+    int start_val = min(A, B);
+    int end_val = max(A, B);
+
+    int ans = 0;
+    for (int i = start_val; i <= end_val; i++) {
+        if (i % 2 == 1) {
+            ans += i;
+        }
+    }
+
+    cout << ans << "\n";
+
+    return 0;
+}
