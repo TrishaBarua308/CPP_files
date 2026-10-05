@@ -1,0 +1,22 @@
+#include <bits/stdc++.h>
+#define ll long long
+using namespace std;
+     
+int main() {
+    ll n;  cin>>n;
+    ll ans=0;
+    for(ll i=1; i<=(n/2); i++)
+    {
+        ans +=i;
+        if(ans>=n)
+        {
+            ll a = i;
+            cout<<a;
+            break;
+        }
+    }
+
+   
+    
+    return 0;
+}
