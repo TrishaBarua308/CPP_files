@@ -1,0 +1,28 @@
+#include <bits/stdc++.h>
+
+using namespace std;
+
+int main() {
+    int n;
+    cin >> n;
+    vector < string > s(n);
+    for (int i = 0; i < n; i++) cin >> s[i];
+
+    for (int i = 0; i < n - 1; i++)
+    {
+        for (int j = 0; j < n - i - 1; j++)
+        {
+            if (s[j].length() > s[j + 1].length())
+            {
+                string temp = s[j];
+                s[j] = s[j + 1];
+                s[j + 1] = temp;
+            }
+        }
+    }
+
+
+    for (auto i: s) cout << i << " ";
+
+    return 0;
+}
