@@ -1,23 +1,37 @@
-//A. Fibonacciness
-#include<bits/stdc++.h>
-#define optimize() ios_base:: sync_with_stdio(0);cin.tie(0);cout.tie(0);
+// A. Fibonacciness
+#include <bits/stdc++.h>
+#define optimize()                \
+    ios_base::sync_with_stdio(0); \
+    cin.tie(0);                   \
+    cout.tie(0);
 #define ll long long
 #define endl '\n'
 using namespace std;
 int main()
 {
     optimize();
-    int t; cin>>t;
+    int t;
+    cin >> t;
 
-    while(t--)
+    while (t--)
     {
-        ll a[4];  cin>>a[0]>>a[1]>>a[2]>>a[3];
-        set<ll> st;
-        st.insert(a[0]+a[1]);
-        st.insert(a[2]-a[1]);
-        st.insert(a[3]-a[2]);
-
-        cout<<4-st.size()<<endl;
+        int a[5];
+        cin >> a[0] >> a[1] >> a[3] >> a[4];
+        int ans = 0;
+        for (int i = -100; i <= 100; i++)
+        {
+            int cnt = 0;
+            a[2]=i;
+            for (int j = 2; j < 5; j++)
+            {
+                if (a[j] == (a[j - 1] + a[j - 2]))
+                {
+                    cnt++;
+                }
+            }
+            ans = max(ans, cnt);
+        }
+        cout << ans << endl;
     }
 
     return 0;
